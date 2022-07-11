@@ -1,7 +1,8 @@
 const fs = require('fs');
 const fsPromises = fs.promises;
 
-class Contenedor {
+
+class Container {
     constructor(fileName) {
         this.filePath = `./${fileName}.txt`;
         this.items = [];
@@ -24,13 +25,17 @@ class Contenedor {
             if(size) {
                 newId = this.items[size - 1].id + 1;
             }
-            const newItem = {...obj, id: newId};
+            const newItem = {
+                ...obj,
+                id: newId,
+                timestamp: Date.now()
+            };
             this.items.push(newItem);
 
             await fsPromises.writeFile(this.filePath, JSON.stringify(this.items, null, 2));
-            return newId;
+            return {success: true, newId};
         } catch(err) {
-            console.log('No se pudo guardar el objeto', err);
+            return {success: false, error: err.message};
         }
     }
 
@@ -38,12 +43,14 @@ class Contenedor {
         try{
             const items = await this.getAll();
             const itemIndex = items.findIndex(el => el.id == id);
-            const newProduct = {...product, id};
+            const oldProduct = items[itemIndex];
+            const newProduct = Object.assign(oldProduct, product, { timestamp: Date.now() });
             items[itemIndex] = newProduct;
+            
             await fsPromises.writeFile(this.filePath, JSON.stringify(items, null, 2));
-            return newProduct;
+            return { success: true, product: newProduct };
         } catch(err) {
-            console.log('Error al actualizar', err);
+            return { success: false, error: err.message };
         }
     }
 
@@ -51,10 +58,10 @@ class Contenedor {
         try {
             const items = await this.getAll();
             const foundItem = items.find(el => el.id == id);
-            if (!foundItem) return null;
+            if (!foundItem) return { success: false, error: `No se encuentra el id ${id}` };
             return foundItem;
         } catch(err) {
-            console.log('error al obtener el item', err);
+            return { success: false, error: err.message }
         }
     }
 
@@ -81,7 +88,7 @@ class Contenedor {
             }
             items.splice(arrayIndex, 1);
             await fsPromises.writeFile(this.filePath, JSON.stringify(items, null, 2));
-            return id;
+            return { success: true, id };
         } catch(err) {
             console.log('No se pudo eliminar el item', err);
         }
@@ -90,7 +97,7 @@ class Contenedor {
     async deleteAll() {
         try {
             await fsPromises.writeFile(this.filePath, JSON.stringify([]));
-            console.log('Se elminaron todos los elementos');
+            return { success: true };
         } catch (err) {
             console.log('Hubo un error', err);
         }
