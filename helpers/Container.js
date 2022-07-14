@@ -58,10 +58,10 @@ class Container {
         try {
             const items = await this.getAll();
             const foundItem = items.find(el => el.id == id);
-            if (!foundItem) return { success: false, error: `No se encuentra el id ${id}` };
+            if (!foundItem) return -1;
             return foundItem;
         } catch(err) {
-            return { success: false, error: err.message }
+            return {success: false, error: err.message};
         }
     }
 
@@ -83,14 +83,16 @@ class Container {
             const items = await this.getAll();
             const arrayIndex = items.findIndex(el => el.id == id);
             if(arrayIndex === -1) {
-                console.log(`El archivo con id:${id} no existe`);
-                return null;
+                return {
+                    succes: false,
+                    err: `El archivo con id=${id} no existe`
+                };
             }
             items.splice(arrayIndex, 1);
             await fsPromises.writeFile(this.filePath, JSON.stringify(items, null, 2));
             return { success: true, id };
         } catch(err) {
-            console.log('No se pudo eliminar el item', err);
+            return { succes: false, err: err.message };
         }
     }
 

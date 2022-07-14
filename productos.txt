@@ -1,22 +1,102 @@
 [
   {
-    "nombre": "calculadora",
-    "descripcion": "Esta es una descripcion",
-    "codigo": "calculadora-roja",
-    "foto": "http://example.com",
-    "precio": 200,
-    "stock": 100,
-    "id": 0,
-    "timestamp": 1657498175787
+    "nombre": "The Selection 1",
+    "descripcion": "Kiera Cass. For thirty-five girls, the Selection is the chance of a lifetime. The opportunity to escape the life laid out for them since birth.",
+    "codigo": "the-selection-vol1",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1322103400i/10507293.jpg",
+    "precio": "12.00",
+    "stock": "12",
+    "id": 3,
+    "timestamp": 1657571015703
   },
   {
-    "nombre": "calculadora",
-    "descripcion": "Esta es una descripcion",
-    "codigo": "calculadora-roja",
-    "foto": "http://example.com",
-    "precio": 200,
-    "stock": 100,
-    "id": 1,
-    "timestamp": 1657498188667
+    "nombre": "Lore Olympus: Volume One",
+    "descripcion": "Rachel Smythe. Experience the propulsive love story of two Greek gods—Hades and Persephone—brought to life with lavish artwork and an irresistible contemporary voice.",
+    "codigo": "lore-olympus-1",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1614887007i/57282218.jpg",
+    "precio": "13.99",
+    "stock": "5",
+    "id": 4,
+    "timestamp": 1657571153252
+  },
+  {
+    "nombre": "Rule of Wolves",
+    "descripcion": "Leigh Bardugo. The wolves are circling. And Ravka's time is running out.",
+    "codigo": "rule-of-wolves",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598133973i/54589790.jpg",
+    "precio": "11.99",
+    "stock": "22",
+    "id": 5,
+    "timestamp": 1657571242165
+  },
+  {
+    "nombre": "Daughter of the Deep",
+    "descripcion": "Rick Riordan. New York Times #1 best-selling author Rick Riordan pays homage to Jules Verne in his exciting modern take on 20,000 Leagues Under the Sea.",
+    "codigo": "daugther-of-the-deep",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1622742517i/57094644.jpg",
+    "precio": "9.99",
+    "stock": "13",
+    "id": 6,
+    "timestamp": 1657571313271
+  },
+  {
+    "nombre": "Firekeeper's Daughter",
+    "descripcion": "Angeline Boulley. Eighteen-year-old Daunis Fontaine has never quite fit in, both in her hometown and on the nearby Ojibwe reservation.",
+    "codigo": "firekeeper-daughter",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619021348i/57812106.jpg",
+    "precio": "10.23",
+    "stock": "14",
+    "id": 7,
+    "timestamp": 1657571389501
+  },
+  {
+    "nombre": "Firekeeper's Daughter",
+    "descripcion": "Angeline Boulley. Eighteen-year-old Daunis Fontaine has never quite fit in, both in her hometown and on the nearby Ojibwe reservation.",
+    "codigo": "firekeeper-daughter",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619021348i/57812106.jpg",
+    "precio": "10.23",
+    "stock": "14",
+    "id": 8,
+    "timestamp": 1657763745707
+  },
+  {
+    "nombre": "Firekeeper's Daughter",
+    "descripcion": "Angeline Boulley. Eighteen-year-old Daunis Fontaine has never quite fit in, both in her hometown and on the nearby Ojibwe reservation.",
+    "codigo": "firekeeper-daughter",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619021348i/57812106.jpg",
+    "precio": "10.23",
+    "stock": "14",
+    "id": 9,
+    "timestamp": 1657763843900
+  },
+  {
+    "nombre": "Firekeeper's Daughter",
+    "descripcion": "Angeline Boulley. Eighteen-year-old Daunis Fontaine has never quite fit in, both in her hometown and on the nearby Ojibwe reservation.",
+    "codigo": "firekeeper-daughter",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619021348i/57812106.jpg",
+    "precio": "10.23",
+    "stock": "14",
+    "id": 10,
+    "timestamp": 1657763887110
+  },
+  {
+    "nombre": "Firekeeper's Daughter",
+    "descripcion": "Angeline Boulley. Eighteen-year-old Daunis Fontaine has never quite fit in, both in her hometown and on the nearby Ojibwe reservation.",
+    "codigo": "firekeeper-daughter",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619021348i/57812106.jpg",
+    "precio": "10.23",
+    "stock": "14",
+    "id": 11,
+    "timestamp": 1657763970087
+  },
+  {
+    "nombre": "Firekeeper's Daughter",
+    "descripcion": "Angeline Boulley. Eighteen-year-old Daunis Fontaine has never quite fit in, both in her hometown and on the nearby Ojibwe reservation.",
+    "codigo": "firekeeper-daughter",
+    "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619021348i/57812106.jpg",
+    "precio": "10.23",
+    "stock": "14",
+    "id": 12,
+    "timestamp": 1657764283578
   }
 ]

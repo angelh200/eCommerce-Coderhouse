@@ -1,0 +1,18 @@
+[
+  {
+    "productos": [
+      {
+        "nombre": "The Selection 1",
+        "descripcion": "Kiera Cass. For thirty-five girls, the Selection is the chance of a lifetime. The opportunity to escape the life laid out for them since birth.",
+        "codigo": "the-selection-vol1",
+        "foto": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1322103400i/10507293.jpg",
+        "precio": "12.00",
+        "stock": "12",
+        "id": 3,
+        "timestamp": 1657571015703
+      }
+    ],
+    "id": 0,
+    "timestamp": 1657573883736
+  }
+]
